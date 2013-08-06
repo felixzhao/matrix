@@ -97,17 +97,17 @@ representation_dict = {...}
 ## Task 26
 d = {0:1000.0, 1:1200.50, 2:990}
 names = ['Larry', 'Curly', 'Moe']
-listdict2dict = { ... }
+listdict2dict = {L[x]:d[x] for x in d.keys()}
 
 ## Task 27
-def nextInts(L): return [ ... ]
+def nextInts(L): return [ x+1 for x in L ]
 
 ## Task 28
-def cubes(L): return [ ... ] 
+def cubes(L): return [ x**3 for x in L ] 
 
 ## Task 29
-def dict2list(dct, keylist): return [ ... ]
+def dict2list(dct, keylist): return [ dct[x] for x in keylist ]
 
 ## Task 30 
-def list2dict(L, keylist): return { ... } 
+def list2dict(L, keylist): return { keylist[i]:L[i] for i in range(len(L)) } 
 
